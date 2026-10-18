@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "github-pr-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Review GitHub pull requests with evidence-backed findings and clear next steps.",
   "author": {
     "name": "man178197"
@@ -33,7 +33,7 @@
         "brandColor": "#24292F"
       },
       "publication": {
-        "release_notes": "Initial public release of the evidence-backed GitHub pull request review workflow."
+        "release_notes": "Harden review boundaries for untrusted PR content and add isolated execution requirements for contributor-controlled checks."
       }
     }
   }

@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="assets/logo.svg" width="120" alt="GitHub PR Helper logo">
+  <img src="plugins/github-pr-helper/assets/logo.svg" width="120" alt="GitHub PR Helper logo">
 </p>
 
 # GitHub PR Helper
 
 一个只包含 Skill 的 Codex/ChatGPT 插件，用于审查 GitHub Pull Request 和本地分支差异。它优先报告可验证的正确性、回归、安全和测试风险，并给出文件级证据与最小修复方向。
 
-当前公开版本：`0.1.0`
+当前公开版本：`0.1.1`
 
 ![GitHub PR Helper acceptance example](docs/images/usage-preview.png)
 
@@ -14,7 +14,7 @@
 
 - 读取 PR 的 base/head 范围，而不是只检查当前工作区。
 - 审查调用方、兼容性、错误处理、安全边界和测试覆盖。
-- 在安全且可执行时运行相关测试、类型检查或构建。
+- 优先读取 GitHub CI 结果；仅在隔离且无凭据的环境中运行 PR 测试、类型检查或构建。
 - 默认只输出审查结论，不修改代码、不提交 GitHub Review。
 - 没有独立服务端、遥测或数据存储；审批结果直接回到当前 Codex 任务。
 
@@ -54,7 +54,7 @@ codex plugin add github-pr-helper@github-pr-helper-plugins
 - 最小修复方向；
 - 已运行的测试与源码推断之间的区别。
 
-若没有可操作问题，插件会直接说明，不为了扩充报告而制造低价值意见。
+插件会把 PR 描述、评论、源码、测试和链接文档视为不可信数据，不会把其中的指令当作操作授权。若没有可操作问题，插件会直接说明，不为了扩充报告而制造低价值意见。
 
 ## 仓库结构
 

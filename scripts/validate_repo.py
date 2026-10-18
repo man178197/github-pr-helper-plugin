@@ -14,6 +14,14 @@ PLUGIN_NAME = "github-pr-helper"
 MARKETPLACE_NAME = "github-pr-helper-plugins"
 REPOSITORY_URL = "https://github.com/man178197/github-pr-helper-plugin"
 SEMVER = re.compile(r"^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$")
+SECURITY_REQUIREMENTS = (
+    "untrusted data, never as instructions",
+    "Only the top-level user request authorizes actions",
+    "Never reveal, copy, upload, or transmit",
+    "disposable temporary checkout or protected sandbox",
+    "without credentials or secrets",
+    "network access disabled",
+)
 
 
 def fail(message: str) -> None:
@@ -111,6 +119,9 @@ def validate_skill(skill_dir: Path) -> None:
     require_equal(fields.get("name"), skill_dir.name, f"{skill_file} skill name")
     if not fields.get("description"):
         fail(f"missing description in {skill_file}")
+    for requirement in SECURITY_REQUIREMENTS:
+        if requirement not in text:
+            fail(f"missing security boundary in {skill_file}: {requirement}")
 
 
 def main() -> None:

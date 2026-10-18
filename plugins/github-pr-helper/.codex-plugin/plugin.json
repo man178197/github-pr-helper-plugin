@@ -1,6 +1,6 @@
 {
   "name": "github-pr-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Review GitHub pull requests with evidence-backed findings and clear next steps.",
   "author": {
     "name": "man178197"

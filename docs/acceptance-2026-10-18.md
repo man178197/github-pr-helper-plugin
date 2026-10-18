@@ -48,4 +48,5 @@ because the PR has no CI results and Windows Python 3.13 was not reproducible in
 the test environment.
 
 The issues found belong to the reviewed PR. No `github-pr-review` Skill change
-or version increment was required.
+was required for this acceptance run. A later pre-release security scan did
+identify two instruction-boundary risks, which were fixed in `0.1.1`.
