@@ -4,17 +4,19 @@
   "version": "0.1.0",
   "description": "Review GitHub pull requests with evidence-backed findings and clear next steps.",
   "author": {
-    "name": "GitHub PR Helper contributors"
+    "name": "man178197"
   },
+  "homepage": "https://github.com/man178197/github-pr-helper-plugin",
+  "repository": "https://github.com/man178197/github-pr-helper-plugin",
   "license": "MIT",
   "keywords": ["github", "pull-request", "code-review", "testing"],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "GitHub PR Helper",
-        "shortDescription": "Review pull requests with evidence-backed findings",
+        "shortDescription": "Evidence-backed PR reviews",
         "longDescription": "A skill-only Codex plugin for reviewing GitHub pull requests, local changes, regressions, tests, and security-sensitive code.",
-        "developerName": "GitHub PR Helper contributors",
+        "developerName": "man178197",
         "category": "Developer Tools",
         "capabilities": ["Read"],
         "defaultPrompt": [
@@ -22,7 +24,16 @@
           "Audit this diff for regressions and missing tests.",
           "Find security-sensitive changes in this pull request."
         ],
+        "websiteURL": "https://github.com/man178197/github-pr-helper-plugin",
+        "supportURL": "https://github.com/man178197/github-pr-helper-plugin/issues",
+        "privacyPolicyURL": "https://github.com/man178197/github-pr-helper-plugin/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/man178197/github-pr-helper-plugin/blob/main/TERMS.md",
+        "logo": "assets/logo.png",
+        "composerIcon": "assets/logo.png",
         "brandColor": "#24292F"
+      },
+      "publication": {
+        "release_notes": "Initial public release of the evidence-backed GitHub pull request review workflow."
       }
     }
   }

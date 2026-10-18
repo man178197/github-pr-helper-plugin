@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GitHub PR Helper">
+  <rect width="512" height="512" rx="104" fill="#0d1117"/>
+  <rect x="14" y="14" width="484" height="484" rx="92" fill="none" stroke="#30363d" stroke-width="12"/>
+  <path d="M166 356V184C166 156 189 134 217 134H300" fill="none" stroke="#f0f6fc" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M269 92L331 134L269 176" fill="none" stroke="#f0f6fc" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="166" cy="376" r="45" fill="#58a6ff"/>
+  <circle cx="166" cy="156" r="45" fill="#0d1117" stroke="#f0f6fc" stroke-width="20"/>
+  <circle cx="330" cy="156" r="45" fill="#0d1117" stroke="#f0f6fc" stroke-width="20"/>
+  <path d="M292 330L330 368L405 278" fill="none" stroke="#3fb950" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
