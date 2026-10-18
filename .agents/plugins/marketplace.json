@@ -1,0 +1,20 @@
+{
+  "name": "github-pr-helper-plugins",
+  "interface": {
+    "displayName": "GitHub PR Helper Plugins"
+  },
+  "plugins": [
+    {
+      "name": "github-pr-helper",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-pr-helper"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

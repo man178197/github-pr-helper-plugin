@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "github-pr-helper",
+  "version": "0.1.0",
+  "description": "Review GitHub pull requests with evidence-backed findings and clear next steps.",
+  "author": {
+    "name": "GitHub PR Helper contributors"
+  },
+  "license": "MIT",
+  "keywords": ["github", "pull-request", "code-review", "testing"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GitHub PR Helper",
+        "shortDescription": "Review pull requests with evidence-backed findings",
+        "longDescription": "A skill-only Codex plugin for reviewing GitHub pull requests, local changes, regressions, tests, and security-sensitive code.",
+        "developerName": "GitHub PR Helper contributors",
+        "category": "Developer Tools",
+        "capabilities": ["Read"],
+        "defaultPrompt": [
+          "Review this pull request and prioritize concrete risks.",
+          "Audit this diff for regressions and missing tests.",
+          "Find security-sensitive changes in this pull request."
+        ],
+        "brandColor": "#24292F"
+      }
+    }
+  }
+}
